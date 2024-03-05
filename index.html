@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File Warning</title>
+    <script>
+        // Function to show a warning before downloading a file
+        function showDownloadWarning() {
+            if (confirm("Warning: Downloading files from unknown sources can be risky. Proceed with caution.")) {
+                // If the user confirms, proceed with the download
+                window.location.href = "your-download-link-here";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Download File Warning</h1>
+    <button onclick="showDownloadWarning()">Download File</button>
+</body>
+</html>
